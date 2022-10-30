@@ -8,49 +8,72 @@
 	<meta charset="UTF-8">
 	<script src="jscripts/myScript.js"></script>
 </head>
+
+<style>
+    .border {
+  border-style: solid;
+  border-width: 5px;
+}
+</style>
+
 <body>
 <main>
-    <div class="w3-center">
-    <h2>Calculator</h2>
+    <div class="w3-center w3-margin w3-padding">
+    <h2 class = "w3-round-xlarge">Calculator</h2>
     
-    <table id="tbl">
+    <div class = "w3-border w3-border-black" style = "width: 300px">
+        <div style = "width: 257px; height: 100;">
+        <table id ="tbl2" class = "w3-container  w3-border w3-margin-8">
         <tr>
-            <td id="results"></td>
+            <td class = "w3-margin" id="input">
+                <div class = "w3-container w3-left" style = "width: 257px; height: 100;">123 +</div>
+            </td>
         </tr>
+        </table>
+    </div>
+
+        <table id="tbl" style = "width: 300px">
         <tr>
-            <td colspan="2"><input type="button" id="clear" value="AC" ></td>
-            <td><input type="button" id="divide" value="/" ></td>
-            <td><input type="button" id="square" value="^" ></td>
+            <td colspan="2" class = "w3-hover-opacity"><input type="button" id="clear" value="DEL" ></td>
+            <td class = "w3-hover-opacity"><input type="button" id="divide" value="/" ></td>
+            <td class = "w3-hover-opacity"><input type="button" id="square" value="^" ></td>
         </tr>
 
         <tr>
-            <td> <input type="button" id="seven" value="7" ></td>
-            <td><input type="button" id="eight" value="8" ></td>
-            <td> <input type="button" id="nine" value="9" ></td>
-            <td> <input type="button" id="mult" value="*" ></td>
+            <div class = "numbers">
+            <td> <input type="button" id="seven" value="7"></td>
+            <td><input type="button" id="eight" value="8"></td>
+            <td> <input type="button" id="nine" value="9"></td>
+            </div>
+            <td class = "w3-hover-opacity"> <input type="button" id="mult" value="*" ></td>
         </tr>
 
         <tr>
+            <div class = "numbers">
             <td><input type="button" id="four" value="4" ></td>
             <td><input type="button" id="five" value="5" ></td>
             <td><input type="button" id="six" value="6" ></td>
-            <td> <input type="button" id="sub" value="-" ></td>
+            </div>
+            <td class = "w3-hover-opacity"> <input type="button" id="sub" value="-" ></td>
         </tr>
 
         <tr>
+            <div class = "numbers">
             <td><input type="button" id="one" value="1" ></td>
             <td><input type="button" id="two" value="2" ></td>
             <td><input type="button" id="three" value="3" ></td>
-            <td> <input type="button" id="add" value="+" ></td>
+            </div>
+            <td class = "w3-hover-opacity"> <input type="button" id="add" value="+" ></td>
         </tr>
 
         <tr>
+            <div class = "numbers">
             <td><input type="button" id="zero" value="0" ></td>
+            </div>
             <td><input type="button" id="dot" value="." ></td>
-            <td colspan="2"> <input type="button" id="equals" value="=" ></td>
+            <td colspan="2" class = "w3-hover-opacity"> <input type="button" id="calculate" value="=" ></td>
         </tr>
-
-    </table>
+    </table
 </div>
 </main>
 
