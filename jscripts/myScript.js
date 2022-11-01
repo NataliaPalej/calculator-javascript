@@ -28,9 +28,14 @@ function deleteLast(){
 
 function getResult() {
     let x = $("#input").value;
-    //condition for error handline if operation is a last character in the input
-    let y = eval(x);
-    $("#input").value = y;
+    //error handling if last input is an operation 
+    if (x.slice(-1) == "+" || x.slice(-1) == "-" || x.slice(-1) == "*" || x.slice(-1) == "/" || x.slice(-1) == "**") {
+        alert ("You need to add number after operator")
+    }
+    else {
+        let y = eval(x);
+        $("#input").value = y;
+    } 
 }
 
 /**
