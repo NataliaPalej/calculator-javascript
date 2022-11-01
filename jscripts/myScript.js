@@ -30,16 +30,23 @@ function getResult() {
     let x = $("#input").value;
     let lastInput = x.slice(-1);
     let firstInput = x.substring(0, 1);
-    //error handling if last input is an operation or first input is *, /, ^
+    //error handling if last input is an operation
     if (lastInput == "+" || lastInput == "-" || lastInput == "*" || lastInput == "/" || lastInput == "**") {
         alert ("You need to add number after operator")
     }
+    //error handling if first input is operator multiply/divide/power
     else if (firstInput == "*" || firstInput == "/" ) {
         alert("First input cannot be multiply, divide or power operator.\nPlease enter a number")
     }
     else {
-        let y = eval(x);
-        $("#input").value = y;
+        //error handling for any other possible error
+        try {
+            let y = eval(x);
+            $("#input").value = y;
+        } catch (error) {
+            alert(error);
+            clearResult();
+        }
     } 
 }
 
