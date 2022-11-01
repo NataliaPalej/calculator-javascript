@@ -1,52 +1,9 @@
-* {
-	box-sizing: border-box;
-	}
-
-	input, select {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	resize: vertical;
-	}
-
-	label {
-	padding: 12px 12px 12px 0;
-	display: inline-block;
-	}
-
-	button {
-	background-color: #04AA6D;
-	color: white;
-	padding: 12px 20px;
-	margin: 5px;
-	border: none;
-	border-radius: 10px;
-	cursor: pointer;
-	float: right;
-	margin-top: 20px;
-	}
-
-	button:hover {
-	background-color: #eb86b9;
-	}
-
 	.container {
 	margin: auto;
 	width: 90%;
 	border-radius: 5px;
 	background-color: #f2f2f2;
 	padding: 20px;
-	}
-
-
-	/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-	@media screen and (max-width: 600px) 
-	{
-	.col-25, .col-75, button {
-	width: 100%;
-	margin-top: 10px;
-	}
 	}
 
 	.center {
@@ -60,4 +17,26 @@
 		background-color: #8c04aa;
 		color: white;
 		padding: 1%;
+	}
+
+	.operator {
+		color: black;
+		background-color: rgb(227, 141, 227);
+		width: 70px;
+		height: 40px;
+		border-radius: 15px;
+	}
+
+	.operator:hover{
+		background-color: rgb(244, 188, 230);
+	}
+
+	.number {
+		width: 70px;
+		height: 40px;
+		border-radius: 15px;
+	}
+
+	.number:hover{
+		background-color: rgb(162, 162, 162);
 	}

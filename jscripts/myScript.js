@@ -4,27 +4,45 @@ const $ = (selector) => document.querySelector(selector);
 let input = $("#input");
 
 function clearResult () {
-    $("#input").innerHTML = " ";
-    
+    $("#input").value = " ";
 }
 
-function appendNumber (number){
-
+function append(number){
+    //setting up input limit
+    let length = ($("#input").value).length;
+    if (length >= 25) {
+        alert("Sorry only 25 inputs are allowed.")
+    }
+    else {
+        $("#input").value += number;
+    }
 }
 
-function operation(operation){
-
+function deleteLast(){
+    let x = $("#input").value;
+    x = x.toString();
+    //substracting last element of the input
+    let y = x.substr(0, x.length-1);
+    $("#input").value = y;
 }
 
-function result(){
-    
+function getResult() {
+    let x = $("#input").value;
+    //condition for error handline if operation is a last character in the input
+    let y = eval(x);
+    $("#input").value = y;
 }
 
-function displayResult () {
+/**
+ * add function that clears the input field once number is clicked after equals was pressed
+ * add border to the calculator 
+ * center calculator
+ * add font to the header
+ * 
+**/
 
-}
 
 window.addEventListener("load", () => {
-	$("#calculate").addEventListener("click", displayResult);
+	$("#calculate").addEventListener("click", getResult);
     $("#clear").addEventListener("click", clearResult);
 });
