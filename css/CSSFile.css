@@ -1,42 +1,73 @@
-	.container {
-	margin: auto;
-	width: 90%;
-	border-radius: 5px;
-	background-color: #f2f2f2;
-	padding: 20px;
-	}
-
-	.center {
-	margin: auto;
-	width: 90%;
-	padding: 10px;
-	}
-
 	h2{
 		text-align: center;
-		background-color: #8c04aa;
+		background-color: #04AA6D;
 		color: white;
 		padding: 1%;
+		border-radius: 5px;
 	}
 
 	.operator {
-		color: black;
-		background-color: rgb(227, 141, 227);
 		width: 70px;
 		height: 40px;
-		border-radius: 15px;
+		margin: 0.5%;
+		background-color: rgb(246, 246, 23);
+		border-color: rgba(125, 122, 125, 0.285);
 	}
 
 	.operator:hover{
-		background-color: rgb(244, 188, 230);
+		background-color: #04AA6D;
+	}
+
+	.clear{
+		background-color:#2196F3;
+		width: 70px;
+		height: 40px;
+		margin: 0.5%;
+		border-color: rgba(102, 99, 99, 0.329);
+	}
+
+	.clear:hover{
+		background-color: #4fdcef;
 	}
 
 	.number {
 		width: 70px;
 		height: 40px;
-		border-radius: 15px;
+		margin: 0.5%;
 	}
 
 	.number:hover{
 		background-color: rgb(162, 162, 162);
 	}
+
+	.colspan{
+		grid-column: span 2;
+	}
+
+	.calculator{
+		align-content: center;
+		justify-content: center;
+		align-content: center;
+		border-style: solid;
+		border-color: rgba(0, 0, 0, 0.753);
+		padding: 1%;
+		background-image: url("../images/image1.jpg");
+		background-attachment: fixed;
+		background-repeat:repeat;
+	}
+
+	.result{
+		border-style: groove;
+		padding: 6%;
+		margin-bottom: 5%;
+		margin-top: 1%;
+		background-color: white;
+	}
+
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 28%;
+		padding-left: 1.75%;
+	  }

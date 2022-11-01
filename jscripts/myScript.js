@@ -28,9 +28,14 @@ function deleteLast(){
 
 function getResult() {
     let x = $("#input").value;
-    //error handling if last input is an operation 
-    if (x.slice(-1) == "+" || x.slice(-1) == "-" || x.slice(-1) == "*" || x.slice(-1) == "/" || x.slice(-1) == "**") {
+    let lastInput = x.slice(-1);
+    let firstInput = x.substring(0, 1);
+    //error handling if last input is an operation or first input is *, /, ^
+    if (lastInput == "+" || lastInput == "-" || lastInput == "*" || lastInput == "/" || lastInput == "**") {
         alert ("You need to add number after operator")
+    }
+    else if (firstInput == "*" || firstInput == "/" ) {
+        alert("First input cannot be multiply, divide or power operator.\nPlease enter a number")
     }
     else {
         let y = eval(x);
