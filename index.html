@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>A00279259_NPalej</title>
 	<link rel="stylesheet" href="css/CSSFile.css">
@@ -7,19 +7,19 @@
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<meta charset="UTF-8">
 	<script src="jscripts/myScript.js"></script>
+
+    <style>
+        @font-face {
+                font-family: titleFont;
+                src: url("fonts/2.ttf");
+            }
+    
+            h2{
+                font-family: titleFont;
+                font-size: xxx-large;
+            }
+    </style>
 </head>
-
-<style>
-    @font-face {
-            font-family: titleFont;
-            src: url("fonts/2.ttf");
-        }
-
-        h2{
-            font-family: titleFont;
-            font-size: xxx-large;
-        }
-</style>
 
 <body>
 <main>
@@ -43,21 +43,21 @@
             <button class="number" onclick="append('7')">7</button>
             <button class="number" onclick="append('8')">8</button>
             <button class="number" onclick="append('9')">9</button>
-            <button id="operation" class="operator" onclick="append('*')">x</button>
+            <button class="operator" onclick="append('*')">x</button>
         </div>
 
         <div>
             <button class="number" onclick="append('4')">4</button>
             <button class="number" onclick="append('5')">5</button>
             <button class="number" onclick="append('6')">6</button>
-            <button id="operation" class="operator" onclick="append('-')">-</button>
+            <button class="operator" onclick="append('-')">-</button>
         </div>
 
         <div>
             <button class="number" onclick="append('1')">1</button>
             <button class="number" onclick="append('2')">2</button>
             <button class="number" onclick="append('3')">3</button>
-            <button id="operation" class="operator" onclick="append('+')">+</button>
+            <button class="operator" onclick="append('+')">+</button>
         </div>
 
         <div>

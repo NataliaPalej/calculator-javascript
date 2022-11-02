@@ -22,6 +22,10 @@
 		background-color: #04AA6D;
 	}
 
+	.operator:active {
+		transform: translateY(1px);
+	}
+
 	.clear{
 		background-color:#2196F3;
 		width: 70px;
@@ -34,10 +38,19 @@
 		background-color: #4fdcef;
 	}
 
+	.clear:active {
+		transform: translateY(1px);
+	}
+
 	.number {
 		width: 70px;
 		height: 40px;
 		margin: 0.5%;
+	}
+
+	.number:active {
+		box-shadow: 2px #666;
+		transform: translateY(1px);
 	}
 
 	.number:hover{
