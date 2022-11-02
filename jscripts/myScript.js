@@ -1,10 +1,12 @@
 "use strict";
 const $ = (selector) => document.querySelector(selector);
 
+//clear textbox function
 function clearResult () {
     $("#input").value = " ";
 }
 
+//function to append input into the textbox
 function append(input){
     //setting up input limit
     let length = ($("#input").value).length;
@@ -16,6 +18,7 @@ function append(input){
     }
 }
 
+//delete last element function
 function deleteLast(){
     let x = $("#input").value;
     x = x.toString();
@@ -24,6 +27,7 @@ function deleteLast(){
     $("#input").value = y;
 }
 
+//calculate result function
 function getResult() {
     let x = $("#input").value;
     let lastInput = x.slice(-1);
