@@ -85,3 +85,10 @@
 		width: 28%;
 		padding-left: 1.75%;
 	  }
+
+	  footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+	  }
