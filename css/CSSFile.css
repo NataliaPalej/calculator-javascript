@@ -23,7 +23,7 @@
 	}
 
 	.operator:active {
-		transform: translateY(1px);
+		transform: translateY(2px);
 	}
 
 	.clear{
@@ -39,7 +39,7 @@
 	}
 
 	.clear:active {
-		transform: translateY(1px);
+		transform: translateY(2px);
 	}
 
 	.number {
@@ -50,19 +50,14 @@
 
 	.number:active {
 		box-shadow: 2px #666;
-		transform: translateY(1px);
+		transform: translateY(2px);
 	}
 
 	.number:hover{
 		background-color: rgb(162, 162, 162);
 	}
 
-	.colspan{
-		grid-column: span 2;
-	}
-
 	.calculator{
-		align-content: center;
 		justify-content: center;
 		align-content: center;
 		border-style: solid;

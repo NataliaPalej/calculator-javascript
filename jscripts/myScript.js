@@ -1,20 +1,18 @@
 "use strict";
 const $ = (selector) => document.querySelector(selector);
 
-let input = $("#input");
-
 function clearResult () {
     $("#input").value = " ";
 }
 
-function append(number){
+function append(input){
     //setting up input limit
     let length = ($("#input").value).length;
     if (length >= 25) {
-        alert("Sorry only 25 inputs are allowed.")
+        alert("Max input length is 25")
     }
     else {
-        $("#input").value += number;
+        $("#input").value += input;
     }
 }
 
@@ -37,6 +35,7 @@ function getResult() {
     //error handling if first input is operator multiply/divide/power
     else if (firstInput == "*" || firstInput == "/" ) {
         alert("First input cannot be multiply, divide or power operator.\nPlease enter a number")
+        clearResult();
     }
     else {
         //error handling for any other possible error
@@ -49,15 +48,6 @@ function getResult() {
         }
     } 
 }
-
-/**
- * add function that clears the input field once number is clicked after equals was pressed
- * add border to the calculator 
- * center calculator
- * add font to the header
- * 
-**/
-
 
 window.addEventListener("load", () => {
 	$("#calculate").addEventListener("click", getResult);
